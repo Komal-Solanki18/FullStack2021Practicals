@@ -7,15 +7,16 @@
     <title>Custom Plan Table Template</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        *{padding: 0;margin: 0;box-sizing: border-box;
+        *{padding: 0;margin: 0;box-sizing: border-box
+            ;font-family: Arial, Helvetica, sans-serif;
         }
       body{
-          max-width: 10px;
-          background-color: dark rgb(108, 108, 172);
+          max-width: 100%;
+          background-color: dark rgb(195, 195, 221);
       }
             .Wrapper{
-            width:50px;
-          background-color: #fff;
+            width:660px;
+          background-color: whitesmoke;
             padding:10px;
             margin:20px auto;
             }
@@ -27,37 +28,91 @@
             }
             .basic
             {
-                background-color: #276d4a;
+                background-color: #d6f0e3;
             }
             .Plus
             {
-                background-color: #092718;
+                background-color: #dddbe7;
             }
             .Deluxe
             {
-                background-color: #51d81f;
+                background-color: #e5eee2;
             }
             .Pro
             {
-                background-color: #276d4a;
+                background-color: #c8f8e1;
             }
            
+           .custom-table td,
+            .custom-table th{
+
+     
+           width:150px; 
+           padding:8px 5px;
+           text-align: center;
+           border-right: 2px solid white;
+           border-left: 2px solid white;
 
        
+           }
+           .custom-table th{
+               height:70px;
+               color:#361c7d;
+               font-size: 28px;
 
+           }
+           i
+           {
+               font-size: 28px;
+               color: #595070;
+               margin-right: 10px;
+           }
+           tbody tr:nth-child(odd),
+           tbody tr:nth-child(odd)
+           {
+               background-color: #add3da;
+           }
+           h2{
+    text-align: center;
+    color: black;
+}
+.fa-times{
+    color: red;
+}
+.fa-check{
+    color: green;
+}
+           tfoot tr
+           {
+               line-height: 70px;
+           }
+           a    
+           {
+               text-decoration: none;
+               color: white;
+               background-color: #595070;
+               padding: 15px 25px;
+               color:white;
+             border: 10px;
+             vertical-align: middle;
+           }
+           a:hover
+           {
+               background-color: tomato;
+           }
     </style>
 </head>
 <body>
     
     <div class="Wrapper">
-        <h2>Select Your Plan</h2>
-        <div class="custom-table">
-            <table class="custom-table"></table>
+        <h2>SELECT YOUR PLAN</h2>
+        <table class="custom-table">
+            
             <colgroup class="basic"></colgroup>
             <colgroup class="Plus"></colgroup>
             <colgroup class="Deluxe"></colgroup>
             <colgroup class="Pro"></colgroup>
-            <table>
+            
                 <thead>
                     <tr>
                         
@@ -237,8 +292,24 @@
 
 
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <a href="#">Sign  Up</a></td>
+                        </td>
+                        <td>
+                            <a href="#">Sign Up</a></td>
+                        </td>
+                        <td>
+                            <a href="#">Sign Up</a></td>
+                        </td>
+                        <td>
+                            <a href="#">Sign Up</a></td>
+                        </td>
+                    </tr>
+                </tfoot>
             </table>
-        </div>
+        
     </div>
 
 </body>
